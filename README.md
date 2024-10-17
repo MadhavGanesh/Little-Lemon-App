@@ -5,7 +5,8 @@ This website showcased implementing a booking application on the Little Lemon We
 
 Note: the only functionality working on this website besides the design is the Reservations Link.
 
-Screenshots
+Little Lemon Website for Table Booking.
+
 ![LittleLemonCover](https://github.com/user-attachments/assets/53fc6419-2a00-4964-a949-6b48268b6b25)
 
-Little Lemon Website for Table Booking.
+
