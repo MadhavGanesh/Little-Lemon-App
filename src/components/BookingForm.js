@@ -18,7 +18,6 @@ const BookingForm = (props) => {
 
   return (
     <header>
-      <hr />
       <section>
         <form onSubmit={handleSubmit}>
           <fieldset className="formField">

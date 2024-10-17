@@ -7,8 +7,10 @@ const Booking = (props) => {
 
 
     return (
-
-        <BookingForm availableTimes={props.availableTimes} dispatch={props.dispatch} submitForm={props.submitForm}/>
+        <>
+            <hr />
+            <BookingForm availableTimes={props.availableTimes} dispatch={props.dispatch} submitForm={props.submitForm} />
+        </>
     )
 }
 
