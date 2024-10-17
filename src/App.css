@@ -17,7 +17,7 @@ nav {
 
 
 .navbar {
-  padding: 10px 13%;
+  padding: 8px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,10 +30,11 @@ nav ul li {
 
 nav ul li a {
   color: #000;
+  font-weight: 625;
 }
 
 nav ul li a:hover {
-  text-decoration: underline solid #495E57;
+  text-decoration: underline solid #F4CE14;
 
 }
 
@@ -86,6 +87,8 @@ nav ul li a:hover {
 h2 {
   color: #F4CE14;
   font-size: 40px;
+  line-height: 0.5;
+  font-family: cursive;
 }
 
 h3 {
@@ -109,6 +112,17 @@ button {
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
+  border: 1px solid #F4CE14;
+}
+
+button:hover {
+  background-color: #000000;
+  color: #F4CE14;
+  transition: 0.3s;
+}
+
+.menu-content button:hover {
+  border: 1px solid #F4CE14;
 }
 
 .banner-img {
@@ -190,7 +204,7 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem 1rem;
+  gap: 3rem 2rem;
 }
 
 .menu-items {
@@ -198,6 +212,7 @@ label {
   width: 350px;
   background: #a9c8be;
   border-radius: 8px;
+  box-shadow: rgba(15, 15, 15, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
 .menu-container img {
@@ -232,6 +247,8 @@ h4 {
   font-weight: 600;
 }
 
+
+
 footer section {
   padding: 10px 13%;
   display: flex;
@@ -247,6 +264,11 @@ footer section {
 
 .company-info p {
   width: 320px;
+}
+
+.footer-section {
+  background-color: #F5F5F5;
+  color: #495e57;
 }
 
 footer h3 {
@@ -330,4 +352,60 @@ footer ul li {
 
 .hidden {
   display: none;
+}
+
+/* -----Booking Form------- */
+
+.formField {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.formField legend {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.formField div {
+  margin-bottom: 15px;
+}
+
+.formField label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formField input,
+.formField select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.btnReceive button {
+  background-color: #F4CE14;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #F4CE14;
+}
+
+.btnReceive button:hover {
+  background-color: #000000;
+  color: #F4CE14;
+  transition: 0.3s;
+  border: 2px solid #F4CE14;
+}
+
+hr {
+  border: 1px solid #bdbdbd43;
+  /* Adjust the border width and color as needed */
+  margin: 10px 0;
+  /* Adjust the margin top and bottom */
 }

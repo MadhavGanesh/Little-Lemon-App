@@ -3,7 +3,7 @@ import small_logo from "../images/Logo .svg"
 
 const Footer = () => {
     return (
-        <footer className="">
+        <footer className="footer-section">
             <hr />
             <section>
                 <div className="company-info">
