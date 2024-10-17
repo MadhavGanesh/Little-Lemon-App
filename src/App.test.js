@@ -6,25 +6,22 @@ import BookingForm from './components/BookingForm';
 import Header from './components/Header';
 
 test('Renders the Header heading', () => {
-    render(<BrowserRouter><App /></BrowserRouter>);
-    const headingElement = screen.getByText("Reserve Table");
-    expect(headingElement).toBeInTheDocument();
-
-    const reserveButton = screen.getByRole("button");
-    fireEvent.click(reserveButton);
-
-    const headingElementNew = screen.getByText("Choose Date");
-    expect(headingElementNew).toBeInTheDocument();
-})
-
-test('Initialize/Update Times', () => {
-  render(<BrowserRouter><App /></BrowserRouter>);
-  const reserveButton = screen.getByRole("button");
+  render(<BrowserRouter><App /></BrowserRouter>)
+  const headingElement = screen.getByText("Reserve Table");
+  expect(headingElement).toBeInTheDocument();
+  const reserveButton = document.getElementById("reserve-btn");
+  expect(reserveButton).toHaveTextContent("Reserve Table");
   fireEvent.click(reserveButton);
+})
 
-  const testTime = []
-  // userEvent.selectOptions(screen.getByLabelText("Choose Time"),screen.getByRole('option', { name: testTime}))
-  // expect(screen.getByRole('option', { name: testTime}).selected).toBe(true);
-
+test('Render Reservations Form fiels ', () => {
+  render(<BrowserRouter><App /></BrowserRouter>);
+  expect(screen.getByLabelText(/choose date/i)).toBeInTheDocument();
+  expect(screen.getByLabelText(/choose time/i)).toBeInTheDocument();
+  expect(screen.getByLabelText(/number of guests/i)).toBeInTheDocument();
+  expect(screen.getByLabelText(/occasion/i)).toBeInTheDocument();
+  const makeReserveBt = document.getElementById('make-reservation');
+  expect(makeReserveBt).toHaveTextContent("Make Your Reservation");
 
 })
+
