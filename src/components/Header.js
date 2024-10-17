@@ -15,7 +15,7 @@ const Header = () => {
           </i>
           </p>
           <Link to="/booking">
-            <button aria-label="On Click">Reserve Table</button>
+            <button id="reserve-btn" aria-label="On Click">Reserve Table</button>
           </Link>
         </div>
         <div className="banner-img">
